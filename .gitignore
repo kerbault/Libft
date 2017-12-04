@@ -3,4 +3,8 @@
 .gitignore
 *.o
 *.a
-a.out
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
