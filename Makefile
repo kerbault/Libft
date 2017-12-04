@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/04 16:55:13 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2017/12/04 17:25:44 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -110,7 +110,6 @@ OBJS		:= $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 .PHONY: all clean fclean re norm
 
 all: $(NAME)
-
 $(NAME): $(OBJS) | $(OBJDIR)
 	$(QUIET)$(ECHO) "Linking the library"
 	$(QUIET)$(AR) $(ARFLAGS) $@ $(OBJS)
