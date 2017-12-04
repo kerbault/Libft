@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/04 17:38:36 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2017/12/04 22:04:58 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -109,8 +109,6 @@ OBJS		:= $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
 .PHONY: all clean fclean re norm
 
-	.PHONY: all clean fclean re
-
 all: $(NAME)
 
 $(NAME): $(OBJDIR) $(OBJS)
@@ -145,6 +143,3 @@ gpush: fclean
 	$(QUIET) git add *
 	$(QUIET) git commit -m "quick push"
 	$(QUIET) git push
-	git status
-
-#### End of rules section ####
