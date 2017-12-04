@@ -1,10 +1,5 @@
-# Binaries for programs and plugins
-
-.gitignore
-*.o
-*.a
-*.exe
-*.dll
-*.so
-*.dylib
-*.out
+*
+!*.c
+!*.h
+!auteur
+!Makefile
