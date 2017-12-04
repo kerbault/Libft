@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/02 21:11:18 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2017/12/04 15:46:39 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -27,6 +27,7 @@ RM			:= /bin/rm
 RMFLAGS		:= -rf
 ECHO		:= echo
 QUIET		:= @
+NORM		:= norminette
 
 #### End of system configuration section ####
 
@@ -106,7 +107,7 @@ OBJS		:= $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
 #### Start of rules section ####
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re norm
 
 all: $(NAME)
 
@@ -133,5 +134,9 @@ fclean: clean
 	$(QUIET)$(RM) $(RMFLAGS) $(NAME)
 
 re: fclean all
+
+norm:
+	$(QUIET)$(ECHO) "Checking Norm 101"
+	$(QUIET)$(NORM) $(SRCDIR)/$(SRC) $(INCLUDESDIR)/*.h
 
 #### End of rules section ####
