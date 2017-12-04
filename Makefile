@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/04 16:53:05 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2017/12/04 16:55:13 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -139,7 +139,7 @@ norm:
 	$(QUIET)$(ECHO) "Checking Norm 101"
 	$(QUIET)$(NORM) $(SRCDIR)/$(SRC) $(INCLUDESDIR)/*.h
 
-gpush:
+gpush: fclean
 	$(QUIET) git add *
 	$(QUIET) git commit -m "quick push"
 	$(QUIET) git push
