@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/01/08 20:37:07 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/01/09 11:58:46 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 12:12:52 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -48,6 +48,7 @@ char			*ft_itoabase(int nb, const int base)
 		ret[i] = index[nb - (tmp * base)];
 		i++;
 	}
+	
 	ret[i] = '\0';
 	return (ret);
 }
