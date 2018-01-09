@@ -6,9 +6,14 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/01/08 20:37:07 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/01/08 20:37:46 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 10:14:29 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
+char	*ft_itoabase(int nb, int base)
+{
+	
+}
