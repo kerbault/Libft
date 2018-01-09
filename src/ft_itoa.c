@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:38:04 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/01/09 14:38:58 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 14:42:41 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -17,7 +17,7 @@ static char	*ft_minint(void)
 {
 	char	*min;
 
-	MALLOC_CHECK((min = ft_strnew(i)));
+	MALLOC_CHECK((min = ft_strnew(12)));
 	min = ft_strdup("-2147483648\0");
 	return (min);
 }
