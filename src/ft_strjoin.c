@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strjoin.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kerbault <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:43:40 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/22 20:43:42 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 15:24:27 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,12 +18,10 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	size_t	size;
 	char	*ret;
 
-	if (!s1 || !s2)
-		return (NULL);
+	NULL_CHECK(s1);
+	NULL_CHECK(s2);
 	size = ft_strlen(s1) + ft_strlen(s2);
-	ret = (char*)malloc(size + 1);
-	if (!ret)
-		return (NULL);
+	MALLOC_CHECK((ret = ft_strnew(size + 1)));
 	ret = ft_strcpy(ret, s1);
 	ft_strcat(ret, s2);
 	return (ret);

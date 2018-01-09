@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:38:04 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/01/09 14:42:41 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 15:54:07 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -17,7 +17,7 @@ static char	*ft_minint(void)
 {
 	char	*min;
 
-	MALLOC_CHECK((min = ft_strnew(12)));
+	MALLOC_CHECK((min = ft_strnew(11)));
 	min = ft_strdup("-2147483648\0");
 	return (min);
 }
@@ -29,7 +29,7 @@ static int	ft_countnumb(int n)
 	i = 0;
 	if (n < 0)
 	{
-		n *= -1;
+		n = -n;
 		i++;
 	}
 	if (n > 0)
@@ -58,7 +58,7 @@ char		*ft_itoa(int n)
 	if (n < 0)
 	{
 		ret[0] = '-';
-		n *= -1;
+		n = -n;
 	}
 	ret[--i] = '\0';
 	i--;

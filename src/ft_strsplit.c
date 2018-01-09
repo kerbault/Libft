@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strsplit.c                                    .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kerbault <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:44:34 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/22 20:44:36 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 15:11:26 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -91,8 +91,7 @@ char			**ft_strsplit(char const *s, char c)
 	i = 0;
 	str = (char *)s;
 	nb = ft_countwd(s, c);
-	if (!(tab = (char **)malloc(sizeof(*tab) * (nb + 1))))
-		return (NULL);
+	MALLOC_CHECK((tab = (char **)malloc(sizeof(*tab) * (nb + 1))));
 	while (i < nb)
 	{
 		tab[i] = ft_runstr(&str, c, i);

@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strtrim.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kerbault <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:44:46 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/22 20:44:48 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/01/09 15:49:50 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -30,9 +30,7 @@ char		*ft_strtrim(char const *s)
 		len--;
 		i++;
 	}
-	str = (char*)malloc(sizeof(char) * (len + 1));
-	if (!str)
-		return (NULL);
+	MALLOC_CHECK((str = ft_strnew(len)));
 	s += i;
 	i = 0;
 	while (i < len)
