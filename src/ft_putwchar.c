@@ -6,11 +6,17 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/02/12 19:10:05 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/02/12 19:12:17 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/02/12 19:31:42 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_putwchar()
+int		ft_putwchar(wchar_t c)
+{
+	size_t	ret;
+
+	ret = 0;
+	return (ret);
+}
