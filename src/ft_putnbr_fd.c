@@ -3,17 +3,17 @@
 /*                                                              /             */
 /*   ft_putnbr_fd.c                                   .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kerbault <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:41:52 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/22 20:41:54 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/13 19:51:52 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, const int fd)
 {
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);

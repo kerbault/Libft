@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:45:12 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/13 14:33:39 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/13 20:00:16 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -104,11 +104,11 @@ char				*ft_itoa(int n);
 void				ft_putchar(char c);
 void				ft_putstr(const char *s);
 void				ft_putendl(const char *s);
-void				ft_putnbr(int n);
+void				ft_putnbr(const int n);
 void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(const char *s, int fd);
-void				ft_putendl_fd(const char *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
+void				ft_putstr_fd(const char *s, const int fd);
+void				ft_putendl_fd(const char *s, const int fd);
+void				ft_putnbr_fd(int n, const int fd);
 
 /*
 ** Functions to manipulate a linked list
@@ -130,6 +130,11 @@ int					ft_isupper(int c);
 int					ft_isspace(int c);
 void				ft_swap(void *s1, void *s2);
 char				*ft_itoa_base(int value, int base);
+size_t				ft_putwchar_fd(wchar_t wc, const int fd);
 size_t				ft_putwchar(wchar_t wc);
+void				ft_putwstr_fd(wchar_t *s, const int fd);
+void				ft_putwstr(wchar_t *s);
+
+
 
 #endif

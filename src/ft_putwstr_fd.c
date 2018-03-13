@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putstr_fd.c                                   .::    .:/ .      .::   */
+/*   ft_putwstr_fd.c                                  .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:42:46 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/13 19:33:41 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/13 20:00:16 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putstr_fd(const char *s, const int fd)
+void		ft_putwstr_fd(wchar_t *s, const int fd)
 {
 	size_t	i;
 
@@ -21,5 +21,5 @@ void		ft_putstr_fd(const char *s, const int fd)
 	if (!s)
 		return ;
 	while (s[i])
-		ft_putchar_fd(s[i++], fd);
+		ft_putwchar_fd(s[i++], fd);
 }
