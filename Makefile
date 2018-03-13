@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/04 22:04:58 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/03/13 14:32:52 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -99,6 +99,8 @@ SRCS		:= \
 	ft_isspace.c \
 	ft_swap.c \
 	ft_putaddr.c \
+	ft_itoa_base.c \
+	ft_putwchar.c \
 	ft_putaddr_fd.c
 OBJDIR		:= obj
 OBJS		:= $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))

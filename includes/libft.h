@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:45:12 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/02/12 19:12:27 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/13 14:33:39 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -129,5 +129,7 @@ int					ft_islower(int c);
 int					ft_isupper(int c);
 int					ft_isspace(int c);
 void				ft_swap(void *s1, void *s2);
+char				*ft_itoa_base(int value, int base);
+size_t				ft_putwchar(wchar_t wc);
 
 #endif

@@ -6,42 +6,36 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/02/12 19:10:05 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/01 08:48:52 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/13 14:33:55 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_putwchar(wchar_t wc)
+size_t	ft_putwchar(wchar_t wc)
 {
-	int	ret;
+	size_t	ret;
 
-	if (wc <= 127)
-	{
+	if (wc <= 127 && (ret = 1))
 		ft_putchar(wc);
-		ret = 1;
-	}
-	else if (wc <= 2047)
+	else if (wc <= 2047 && (ret = 2))
 	{
 		ft_putchar((wc >> 6) + 0xC0);
 		ft_putchar((wc & 0x3F) + 0x80);
-		ret = 2;
 	}
-	else if (wc <= 65535)
+	else if (wc <= 65535 && (ret = 3))
 	{
 		ft_putchar((wc >> 12) + 0xE0);
 		ft_putchar(((wc >> 6) & 0x3F) + 0x80);
 		ft_putchar((wc & 0x3F) + 0x80);
-		ret = 3;
 	}
-	else if (wc <= 1114111)
+	else if (wc <= 1114111 && (ret = 4))
 	{
 		ft_putchar((wc >> 18) + 0xF0);
 		ft_putchar(((wc >> 12) & 0x3F) + 0x80);
 		ft_putchar(((wc >> 6) & 0x3F) + 0x80);
 		ft_putchar((wc & 0x3F) + 0x80);
-		ret = 4;
 	}
 	return (ret);
 }
