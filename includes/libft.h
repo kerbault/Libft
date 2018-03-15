@@ -6,7 +6,7 @@
 /*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:45:12 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2018/03/13 20:00:16 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/03/15 22:54:01 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -24,7 +24,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <wchar.h>
-
 
 # define NULL_CHECK(x) if (x == NULL) return (NULL)
 # define VOID_NULL_CHECK(x) if (x == NULL) return
@@ -134,7 +133,5 @@ size_t				ft_putwchar_fd(wchar_t wc, const int fd);
 size_t				ft_putwchar(wchar_t wc);
 void				ft_putwstr_fd(wchar_t *s, const int fd);
 void				ft_putwstr(wchar_t *s);
-
-
 
 #endif
